@@ -10,7 +10,16 @@ module.exports = {
         siteUrl: `https://www.yourdomain.tld`,
     },
     plugins: [
-        'gatsby-plugin-google-gtag',
+        {
+            resolve: 'gatsby-source-strapi',
+            options: {
+                apiURL: process.env.STRAPI_API_URL,
+                accessToken: process.env.STRAPI_TOKEN,
+                collectionTypes: [`article`],
+                singleTypes: [`header`, `footer`, `homepage`],
+            },
+        },
+        // 'gatsby-plugin-google-gtag',
         'gatsby-plugin-image',
         {
             resolve: 'gatsby-plugin-manifest',
@@ -36,15 +45,6 @@ module.exports = {
                 path: './src/pages/',
             },
             __key: 'pages',
-        },
-        {
-            resolve: 'gatsby-source-strapi',
-            options: {
-                apiURL: process.env.STRAPI_API_URL,
-                accessToken: process.env.STRAPI_TOKEN,
-                collectionTypes: [],
-                singleTypes: [],
-            },
         },
     ],
 }
