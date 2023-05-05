@@ -1,0 +1,25 @@
+nav {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.menu__links {
+    display: flex;
+}
+
+.menu__icon {
+    display: none;
+}
+
+@media screen and (width < 640px) {
+    .menu__links {
+        display: none;
+    }
+
+    .menu__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

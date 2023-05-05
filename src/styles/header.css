@@ -7,9 +7,7 @@ header {
     background-color: hsl(0 0% 90%);
 }
 
-nav {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.brand__text {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-weight: 600;
 }

@@ -1,16 +1,20 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
+import NavMenu from '../nav/NavMenu'
+
 import '../../styles/header.css'
 
-const Header = props => {
+const Header = ({ siteTitle }) => {
     return (
         <header>
-            <Link to='/'>Many Rivers Band</Link>
-            <nav>
-                <Link to='/news'>News</Link>
-                <Link to='/about'>About</Link>
-            </nav>
+            <Link
+                to='/'
+                className='brand'
+            >
+                <p className='brand__text'>{siteTitle}</p>
+            </Link>
+            <NavMenu />
         </header>
     )
 }

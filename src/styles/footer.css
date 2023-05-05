@@ -6,8 +6,20 @@ footer {
     background-color: hsl(0 0% 90%);
 }
 
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .copyright__statement {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+footer > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }

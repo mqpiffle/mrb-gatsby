@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import Layout from '../components/shared/Layout'
+import Seo from '../components/shared/Seo'
 
 import '../styles/index.css'
 
@@ -19,6 +20,4 @@ const IndexPage = props => {
 
 export default IndexPage
 
-export const Head = () => (
-    <title>Many Rivers Band Official Website | Home</title>
-)
+export const Head = () => <Seo title={'Home'} />
