@@ -1,0 +1,15 @@
+header {
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: hsl(0 0% 90%);
+}
+
+nav {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
