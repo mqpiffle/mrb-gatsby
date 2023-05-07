@@ -4,9 +4,9 @@
 
 /* STYLE RESETS */
 
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -16,15 +16,23 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-main {
-    width: min(1280px, 97%);
-    margin: 3rem auto;
-    flex: 1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -36,7 +44,37 @@ a {
     text-decoration: none;
 }
 
+/* GLOBAL VARIABLES */
+
+:root {
+    --clr-gray-05: hsl(0 0% 5%);
+    --clr-gray-10: hsl(0 0% 10%);
+    --clr-gray-15: hsl(0 0% 15%);
+    --clr-gray-20: hsl(0 0% 20%);
+    --clr-gray-25: hsl(0 0% 25%);
+    --clr-gray-30: hsl(0 0% 30%);
+    --clr-gray-35: hsl(0 0% 35%);
+    --clr-gray-40: hsl(0 0% 40%);
+    --clr-gray-45: hsl(0 0% 45%);
+    --clr-gray-50: hsl(0 0% 50%);
+    --clr-gray-55: hsl(0 0% 55%);
+    --clr-gray-60: hsl(0 0% 60%);
+    --clr-gray-65: hsl(0 0% 65%);
+    --clr-gray-70: hsl(0 0% 70%);
+    --clr-gray-75: hsl(0 0% 75%);
+    --clr-gray-80: hsl(0 0% 80%);
+    --clr-gray-85: hsl(0 0% 85%);
+    --clr-gray-90: hsl(0 0% 90%);
+    --clr-gray-95: hsl(0 0% 95%);
+}
+
 /* HOME PAGE STYLES */
+
+main {
+    width: min(1280px, 97%);
+    margin: 3rem auto;
+    flex: 1;
+}
 
 main > p {
     max-width: 55ch;

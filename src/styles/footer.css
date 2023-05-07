@@ -3,7 +3,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 5rem 1rem;
-    background-color: hsl(0 0% 90%);
+    background-color: var(--clr-gray-90);
 }
 
 .copyright {

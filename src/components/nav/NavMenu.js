@@ -1,27 +1,38 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 import Icon from '@mdi/react'
 import { mdiMenu } from '@mdi/js'
 
+import NavLinks from './NavLinks'
+import SidebarMenu from './SidebarMenu'
+
 import '../../styles/nav-menu.css'
 
 const NavMenu = props => {
+    const [sidebarOpen, setSidebarOpen] = useState(false)
+
+    const handleClick = e => {
+        console.log('CLICK!')
+        e.preventDefault()
+        setSidebarOpen(true)
+    }
+
+    console.log(sidebarOpen)
     return (
         <div className='menu'>
             <Icon
                 path={mdiMenu}
-                title='Dropdown Menu'
+                title='Sidebar Menu'
                 size={1.5}
                 className='menu__icon'
+                onClick={handleClick}
             />
-            <div className='menu__links'>
-                <nav>
-                    <Link to='/news'>News</Link>
-                    <Link to='/media'>Media</Link>
-                    <Link to='/about'>About</Link>
-                </nav>
-            </div>
+            <NavLinks />
+            <SidebarMenu
+                sidebar={sidebarOpen}
+                open={setSidebarOpen}
+            />
         </div>
     )
 }
