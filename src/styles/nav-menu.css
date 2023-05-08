@@ -3,6 +3,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 2rem;
+    color: white;
+    font-weight: 500;
 }
 .menu__links {
     display: flex;

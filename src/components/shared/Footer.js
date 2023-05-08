@@ -1,12 +1,19 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Icon from '@mdi/react'
 import { mdiCopyright } from '@mdi/js'
 
 import '../../styles/footer.css'
 
-const Footer = props => {
+const Footer = ({ siteTitle }) => {
+    const data = useStaticQuery(graphql`
+        query {
+            strapiFooter {
+                copyrightByline
+            }
+        }
+    `)
     const currentYear = new Date().getFullYear()
 
     return (
@@ -18,14 +25,10 @@ const Footer = props => {
                         title='Copyright'
                         size={1}
                     />
-                    {currentYear} Many Rivers Band.
+                    {currentYear} {siteTitle}
                 </p>
-                <p>All rights reserved.</p>
+                <p>{data.strapiFooter.copyrightByline}</p>
             </div>
-            <nav>
-                <Link to='/news'>News</Link>
-                <Link to='/about'>About</Link>
-            </nav>
         </footer>
     )
 }

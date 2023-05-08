@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
 
 import Icon from '@mdi/react'
 import { mdiMenu } from '@mdi/js'

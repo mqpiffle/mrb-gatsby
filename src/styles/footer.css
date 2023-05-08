@@ -1,9 +1,11 @@
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5rem 1rem;
-    background-color: var(--clr-gray-90);
+    font-weight: 500;
+    color: white;
+    background-color: var(--clr-gray-10);
 }
 
 .copyright {

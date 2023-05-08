@@ -12,6 +12,7 @@
 
 html {
     font-size: 16px;
+    font-weight: 500;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -36,7 +37,7 @@ span {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.65;
 }
 
 a {
