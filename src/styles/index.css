@@ -38,6 +38,9 @@ span {
 
 p {
     line-height: 1.65;
+    max-width: 55ch;
+    margin: auto;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 a {
@@ -72,13 +75,14 @@ a {
 /* HOME PAGE STYLES */
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: min(1280px, 97%);
     margin: 3rem auto;
     flex: 1;
 }
 
-main > p {
-    max-width: 55ch;
-    margin: auto;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+.hero-image {
+    width: 100%;
 }

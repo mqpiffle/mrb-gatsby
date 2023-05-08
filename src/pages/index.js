@@ -1,19 +1,26 @@
 import * as React from 'react'
+import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/shared/Layout'
 import Seo from '../components/shared/Seo'
 
 import '../styles/index.css'
 
-const IndexPage = props => {
+const IndexPage = ({ data }) => {
     return (
         <Layout pageTitle={'Many Rivers Band Official Website | Home'}>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Aspernatur quasi, sapiente dicta vitae ducimus distinctio
-                perferendis eveniet repellat nesciunt recusandae! Nulla sapiente
-                dignissimos beatae ea consequuntur labore, odit iusto eos.
-            </p>
+            <GatsbyImage
+                className='hero-image'
+                image={getImage(data.strapiHomepage.heroImage.localFile)}
+                alt='Many Rivers Band logo'
+            />
+            <div
+                dangerouslySetInnerHTML={{
+                    __html: data.strapiHomepage.text.data.childMarkdownRemark
+                        .html,
+                }}
+            />
         </Layout>
     )
 }
@@ -21,3 +28,25 @@ const IndexPage = props => {
 export default IndexPage
 
 export const Head = () => <Seo title={'Home'} />
+
+export const PageQuery = graphql`
+    query {
+        strapiHomepage {
+            title
+            heroImage {
+                localFile {
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                }
+            }
+            text {
+                data {
+                    childMarkdownRemark {
+                        html
+                    }
+                }
+            }
+        }
+    }
+`
