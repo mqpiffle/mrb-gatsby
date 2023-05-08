@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Icon from '@mdi/react'
 import { mdiClose } from '@mdi/js'
 
+import '../../styles/sidebar-menu.css'
+
 const SidebarMenu = ({ sidebar, open }) => {
     const sidebarMenu = sidebar ? 'sidebar__open' : 'sidebar__closed'
 
@@ -18,7 +20,7 @@ const SidebarMenu = ({ sidebar, open }) => {
                 path={mdiClose}
                 title='Close Sidebar Menu'
                 size={1.5}
-                className='menu__icon'
+                className='sidebar__icon'
                 onClick={handleClick}
             />
             <nav>
