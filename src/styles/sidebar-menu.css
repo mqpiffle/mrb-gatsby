@@ -21,6 +21,7 @@
 
 .sidebar__icon {
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .sidebar__closed {

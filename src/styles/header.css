@@ -1,5 +1,5 @@
 header {
-    width: 100dvw;
+    max-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
