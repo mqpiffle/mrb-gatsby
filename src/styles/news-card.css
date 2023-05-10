@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    max-height: calc(400px / 1.666667);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 9px black;
+    transition: box-shadow 220ms ease-in-out;
+}
+
+.card:hover,
+.card:focus {
+    box-shadow: 3px 3px 18px 3px black;
+}
+
+.card-context {
+    padding: 0.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    background-image: var(--gradient-color);
+}
+
+.card-context__date {
+    margin: 0;
+}
+
+.card-context__body {
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

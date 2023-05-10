@@ -31,9 +31,14 @@ h4,
 h5,
 h6,
 p,
-span {
+span,
+ul {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 p {
@@ -51,6 +56,8 @@ a {
 /* GLOBAL VARIABLES */
 
 :root {
+    --clr-primary: hsl(19 52% 56%);
+    --clr-secondary: hsl(337 78% 33%);
     --clr-gray-05: hsl(0 0% 5%);
     --clr-gray-10: hsl(0 0% 10%);
     --clr-gray-15: hsl(0 0% 15%);
@@ -70,6 +77,16 @@ a {
     --clr-gray-85: hsl(0 0% 85%);
     --clr-gray-90: hsl(0 0% 90%);
     --clr-gray-95: hsl(0 0% 95%);
+    --gradient-gray: linear-gradient(
+        135deg,
+        var(--clr-gray-10),
+        var(--clr-gray-40)
+    );
+    --gradient-color: linear-gradient(
+        135deg,
+        var(--clr-primary),
+        var(--clr-secondary)
+    );
 }
 
 /* HOME PAGE STYLES */

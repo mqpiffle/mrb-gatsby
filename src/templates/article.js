@@ -26,7 +26,7 @@ const Article = ({ data }) => {
     )
 }
 
-export const PageQuery = graphql`
+export const pageQuery = graphql`
     query ($slug: String) {
         strapiArticle(slug: { eq: $slug }) {
             mainImage {
