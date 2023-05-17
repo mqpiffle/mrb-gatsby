@@ -19,7 +19,7 @@
     align-items: flex-start;
     justify-content: space-between;
     color: white;
-    background-image: var(--gradient-color);
+    background-image: var(--gradient-gray);
 }
 
 .card-context__date {

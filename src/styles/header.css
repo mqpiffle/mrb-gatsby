@@ -6,9 +6,30 @@ header {
     padding: 1rem;
     color: white;
     background-color: var(--clr-gray-10);
+    background-image: url('../images/mrb_bg.png');
+    background-position: center;
 }
 
-.brand__text {
-    font-size: clamp(1.25rem, 3vw, 2rem);
-    font-weight: 600;
+.temp {
+    font-family: 'Mistral', cursive;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 200;
+    color: black;
+    text-shadow: 0 0 3px white;
+}
+
+.brand {
+    /* width: max(15rem, 25vw); */
+    /* aspect-ratio: 6 / 1; */
+    padding: 0.25rem 0.5rem 0 0.5rem;
+    fill: white;
+    /* background-color: white; */
+    /* background-image: url('../images/mrb_bg.png');
+    background-position: center; */
+    border-radius: 0.5rem;
+}
+
+.brand-logo {
+    width: 100%;
+    filter: drop-shadow(0 0 7px black);
 }

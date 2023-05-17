@@ -11,6 +11,14 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /assets/, // See below to configure properly
+                },
+            },
+        },
+        {
             resolve: 'gatsby-source-strapi',
             options: {
                 apiURL: process.env.STRAPI_API_URL,

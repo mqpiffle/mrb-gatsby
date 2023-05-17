@@ -1,6 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 
+import Brand from '../../assets/mrb_brand.svg'
 import NavMenu from '../nav/NavMenu'
 
 import '../../styles/header.css'
@@ -12,7 +13,8 @@ const Header = ({ siteTitle }) => {
                 to='/'
                 className='brand'
             >
-                <p className='brand__text'>{siteTitle}</p>
+                <h1 className='temp'>Many Rivers Band</h1>
+                {/* <Brand className='brand-logo' /> */}
             </Link>
             <NavMenu />
         </header>
