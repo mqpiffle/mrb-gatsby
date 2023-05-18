@@ -5,8 +5,8 @@ header {
     justify-content: space-between;
     padding: 1rem;
     color: white;
-    background-color: var(--clr-gray-10);
-    background-image: url('../images/mrb_bg.png');
+    background-color: var(--clr-gray-90);
+    /* background-image: url('../images/mrb_bg.png'); */
     background-position: center;
 }
 

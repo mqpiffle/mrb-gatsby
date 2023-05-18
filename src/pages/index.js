@@ -16,6 +16,7 @@ const IndexPage = ({ data }) => {
                 alt='Many Rivers Band logo'
             />
             <div
+                className='text-body'
                 dangerouslySetInnerHTML={{
                     __html: data.strapiHomepage.text.data.childMarkdownRemark
                         .html,

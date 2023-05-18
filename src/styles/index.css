@@ -53,7 +53,7 @@ ul {
 
 p {
     line-height: 1.65;
-    max-width: 55ch;
+    max-width: 65ch;
     margin: auto;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
@@ -105,7 +105,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: min(1280px, 97%);
+    width: min(1280px, 100%);
     margin: 3rem auto;
     flex: 1;
 }
@@ -115,4 +115,12 @@ main {
     margin: 0;
     display: flex;
     width: 100%;
+}
+
+.text-body {
+    margin-top: 2rem;
+}
+
+.text-body p {
+    padding: 1rem;
 }

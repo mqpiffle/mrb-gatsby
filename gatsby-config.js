@@ -24,7 +24,7 @@ module.exports = {
                 apiURL: process.env.STRAPI_API_URL,
                 accessToken: process.env.STRAPI_TOKEN,
                 collectionTypes: [`article`],
-                singleTypes: [`header`, `footer`, `homepage`],
+                singleTypes: [`header`, `footer`, `homepage`, `aboutpage`],
             },
         },
         // 'gatsby-plugin-google-gtag',
