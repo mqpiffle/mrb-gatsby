@@ -7,7 +7,7 @@
     font-weight: 200 300 400;
     font-display: swap;
     font-style: normal;
-    src: url(/fonts/mistral-webfont.woff) format('woff'),
+    src: local('Mistral'), url(/fonts/mistral-webfont.woff) format('woff'),
         url(/fonts/Mistral.ttf) format('truetype');
 }
 
@@ -16,7 +16,8 @@
     font-weight: 200 300 400 500 600 700 800;
     font-display: swap;
     font-style: normal;
-    src: url(/fonts/Manrope-VariableFont_wght.ttf) format('truetype');
+    src: local('Manrope'),
+        url(/fonts/Manrope-VariableFont_wght.ttf) format('truetype');
 }
 
 /* STYLE RESETS */
