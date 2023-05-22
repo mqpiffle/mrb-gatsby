@@ -12,7 +12,6 @@ const NavMenu = props => {
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
     const handleClick = e => {
-        console.log('CLICK!')
         e.preventDefault()
         setSidebarOpen(true)
     }
