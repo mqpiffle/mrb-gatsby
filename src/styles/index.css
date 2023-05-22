@@ -7,7 +7,8 @@
     font-weight: 200 300 400;
     font-display: swap;
     font-style: normal;
-    src: url(/fonts/mistral-webfont.woff) format('woff');
+    src: url(/fonts/mistral-webfont.woff) format('woff'),
+        url(/fonts/Mistral.ttf) format('truetype');
 }
 
 @font-face {

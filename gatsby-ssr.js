@@ -13,6 +13,14 @@ export const onRenderBody = ({ setHeadComponents }) => {
             crossOrigin='anonymous'
         />,
         <link
+            key='Mistral'
+            rel='preload'
+            href='/fonts/Mistral.ttf'
+            as='font'
+            type='font/ttf'
+            crossOrigin='anonymous'
+        />,
+        <link
             key='Manrope'
             rel='preload'
             href='/fonts/Manrope-VariableFont_weight.ttf'
