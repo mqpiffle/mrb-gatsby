@@ -17,7 +17,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
             rel='preload'
             href='/fonts/Mistral.ttf'
             as='font'
-            type='font/ttf'
+            type='font/truetype'
             crossOrigin='anonymous'
         />,
         <link
@@ -25,7 +25,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
             rel='preload'
             href='/fonts/Manrope-VariableFont_weight.ttf'
             as='font'
-            type='font/ttf'
+            type='font/truetype'
             crossOrigin='anonymous'
         />,
     ])
