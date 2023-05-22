@@ -7,7 +7,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
         <link
             key='Mistral'
             rel='preload'
-            href='/opt/render/project/src/public/uploads/fonts/mistral-webfont.woff'
+            href='/opt/render/project/src/public/fonts/mistral-webfont.woff'
             as='font'
             type='font/woff'
             crossOrigin='anonymous'
@@ -15,7 +15,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
         <link
             key='Manrope'
             rel='preload'
-            href='/opt/render/project/src/public/uploads/fonts/Manrope-VariableFont_weight.ttf'
+            href='/opt/render/project/src/public/fonts/Manrope-VariableFont_weight.ttf'
             as='font'
             type='font/ttf'
             crossOrigin='anonymous'
