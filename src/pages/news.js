@@ -31,7 +31,7 @@ export const PageQuery = graphql`
                 mainImage {
                     localFile {
                         childImageSharp {
-                            gatsbyImageData(width: 400, aspectRatio: 1.666667)
+                            gatsbyImageData(width: 640, aspectRatio: 1.666667)
                         }
                     }
                 }

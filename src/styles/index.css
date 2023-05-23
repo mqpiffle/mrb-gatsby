@@ -58,7 +58,7 @@ ul {
     list-style: none;
 }
 
-p {
+.text-body {
     line-height: 1.65;
     max-width: 65ch;
     margin: auto;
@@ -114,6 +114,7 @@ main {
     align-items: center;
     width: min(1280px, 100%);
     margin: 3rem auto;
+    gap: 3rem;
     flex: 1;
 }
 
@@ -125,10 +126,6 @@ main {
     z-index: 1;
 }
 
-.text-body {
-    margin-top: 2rem;
-}
-
 .text-body p {
-    padding: 1rem;
+    padding-bottom: 1rem;
 }

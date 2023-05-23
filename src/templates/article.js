@@ -5,18 +5,21 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/shared/Layout'
 import Seo from '../components/shared/Seo'
 
+import '../styles/article.css'
+
 const Article = ({ data }) => {
     const article = data.strapiArticle
 
     return (
         <Layout>
-            <article>
+            <article className='news-article'>
                 <GatsbyImage
                     image={getImage(article?.mainImage?.localFile)}
                     alt='Now this is a tiger.'
                 />
-                <h2>{article?.title}</h2>
+                <h2 className='news-article__title'>{article?.title}</h2>
                 <div
+                    className='text-body'
                     dangerouslySetInnerHTML={{
                         __html: article?.body.data.childMarkdownRemark.html,
                     }}
