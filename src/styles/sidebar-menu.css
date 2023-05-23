@@ -7,9 +7,10 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    height: 100vh;
     transform-origin: right;
     padding: 1rem;
+    color: white;
     background-color: var(--clr-gray-10);
     transition: opacity var(--menu-tfm), width var(--menu-tfm);
     overflow: hidden;

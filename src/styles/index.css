@@ -38,6 +38,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 h1,
@@ -121,6 +122,7 @@ main {
     margin: 0;
     display: flex;
     width: 100%;
+    z-index: 1;
 }
 
 .text-body {
