@@ -9,10 +9,7 @@ import '../../styles/header.css'
 const Header = ({ siteTitle }) => {
     return (
         <header>
-            <Link
-                to='/'
-                className='brand'
-            >
+            <Link to='/'>
                 <h1 className='temp'>Many Rivers Band</h1>
                 {/* <Brand className='brand-logo' /> */}
             </Link>

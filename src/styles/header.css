@@ -4,8 +4,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    color: white;
-    background-color: var(--clr-gray-90);
+    background-color: white;
     /* background-image: url('../images/mrb_bg.png'); */
     background-position: center;
 }
@@ -13,24 +12,6 @@ header {
 .temp {
     font-family: 'Mistral', cursive;
     font-size: clamp(2rem, 4vw, 4rem);
-    font-weight: 200;
+    font-weight: 400;
     color: black;
-    text-shadow: 0 0 1px white;
-    -webkit-text-stroke: 1px white;
-}
-
-.brand {
-    /* width: max(15rem, 25vw); */
-    /* aspect-ratio: 6 / 1; */
-    padding: 0.25rem 0.5rem 0 0.5rem;
-    fill: white;
-    /* background-color: white; */
-    /* background-image: url('../images/mrb_bg.png');
-    background-position: center; */
-    border-radius: 0.5rem;
-}
-
-.brand-logo {
-    width: 100%;
-    filter: drop-shadow(0 0 7px black);
 }

@@ -7,17 +7,9 @@ export const onRenderBody = ({ setHeadComponents }) => {
         <link
             key='Mistral'
             rel='preload'
-            href='/fonts/mistral-webfont.woff'
+            href='/fonts/Mistral.woff2'
             as='font'
-            type='font/woff'
-            crossOrigin='anonymous'
-        />,
-        <link
-            key='Mistral'
-            rel='preload'
-            href='/fonts/Mistral.ttf'
-            as='font'
-            type='font/ttf'
+            type='font/woff2'
             crossOrigin='anonymous'
         />,
         <link
