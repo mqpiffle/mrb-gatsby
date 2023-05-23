@@ -18,7 +18,7 @@ const NewsFeed = ({ newsData }) => {
     ))
     return (
         <>
-            <h1 className='news-title'>Many Rivers Band News</h1>
+            <h2 className='page-title'>Many Rivers Band News</h2>
             <ul className='news-list'>{list}</ul>
         </>
     )

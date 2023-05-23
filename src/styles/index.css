@@ -129,3 +129,9 @@ main {
 .text-body p {
     padding-bottom: 1rem;
 }
+
+.page-title {
+    font-family: 'Mistral', cursive;
+    font-weight: 200;
+    font-size: clamp(1.75rem, 4vw, 3.5rem);
+}

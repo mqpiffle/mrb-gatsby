@@ -13,6 +13,7 @@ const AboutPage = ({ data }) => {
                 image={getImage(data.strapiAboutpage.mainImage.localFile)}
                 alt='Many Rivers Band logo'
             />
+            <h2 className='page-title'>{data.strapiAboutpage.title}</h2>
             <div
                 className='text-body'
                 dangerouslySetInnerHTML={{
