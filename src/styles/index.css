@@ -3,19 +3,19 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap'); */
 
 @font-face {
-    font-family: 'Mistral';
-    src: url(/fonts/Mistral.woff2) format('woff2');
-    font-weight: 200 300 400;
-    font-style: normal;
+	font-family: "Mistral";
+	src: url(/fonts/Mistral.woff2) format("woff2");
+	font-weight: 200 300 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    font-weight: 200 300 400 500 600 700 800;
-    font-display: swap;
-    font-style: normal;
-    src: local('Manrope'),
-        url(/fonts/Manrope-VariableFont_wght.ttf) format('truetype');
+	font-family: "Manrope";
+	font-weight: 200 300 400 500 600 700 800;
+	font-display: swap;
+	font-style: normal;
+	src: local("Manrope"),
+		url(/fonts/Manrope-VariableFont_wght.ttf) format("truetype");
 }
 
 /* STYLE RESETS */
@@ -23,22 +23,22 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Manrope", sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 h1,
@@ -50,88 +50,89 @@ h6,
 p,
 span,
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 .text-body {
-    line-height: 1.65;
-    max-width: 65ch;
-    margin: auto;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+	line-height: 1.65;
+	max-width: 65ch;
+	margin: auto;
+	font-size: clamp(1rem, 1.5vw, 1.5rem);
+	padding-inline: 0.5 rem;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 /* GLOBAL VARIABLES */
 
 :root {
-    --clr-primary: hsl(19 52% 56%);
-    --clr-secondary: hsl(337 78% 33%);
-    --clr-gray-05: hsl(0 0% 5%);
-    --clr-gray-10: hsl(0 0% 10%);
-    --clr-gray-15: hsl(0 0% 15%);
-    --clr-gray-20: hsl(0 0% 20%);
-    --clr-gray-25: hsl(0 0% 25%);
-    --clr-gray-30: hsl(0 0% 30%);
-    --clr-gray-35: hsl(0 0% 35%);
-    --clr-gray-40: hsl(0 0% 40%);
-    --clr-gray-45: hsl(0 0% 45%);
-    --clr-gray-50: hsl(0 0% 50%);
-    --clr-gray-55: hsl(0 0% 55%);
-    --clr-gray-60: hsl(0 0% 60%);
-    --clr-gray-65: hsl(0 0% 65%);
-    --clr-gray-70: hsl(0 0% 70%);
-    --clr-gray-75: hsl(0 0% 75%);
-    --clr-gray-80: hsl(0 0% 80%);
-    --clr-gray-85: hsl(0 0% 85%);
-    --clr-gray-90: hsl(0 0% 90%);
-    --clr-gray-95: hsl(0 0% 95%);
-    --gradient-gray: linear-gradient(
-        135deg,
-        var(--clr-gray-10),
-        var(--clr-gray-40)
-    );
-    --gradient-color: linear-gradient(
-        135deg,
-        var(--clr-primary),
-        var(--clr-secondary)
-    );
+	--clr-primary: hsl(19 52% 56%);
+	--clr-secondary: hsl(337 78% 33%);
+	--clr-gray-05: hsl(0 0% 5%);
+	--clr-gray-10: hsl(0 0% 10%);
+	--clr-gray-15: hsl(0 0% 15%);
+	--clr-gray-20: hsl(0 0% 20%);
+	--clr-gray-25: hsl(0 0% 25%);
+	--clr-gray-30: hsl(0 0% 30%);
+	--clr-gray-35: hsl(0 0% 35%);
+	--clr-gray-40: hsl(0 0% 40%);
+	--clr-gray-45: hsl(0 0% 45%);
+	--clr-gray-50: hsl(0 0% 50%);
+	--clr-gray-55: hsl(0 0% 55%);
+	--clr-gray-60: hsl(0 0% 60%);
+	--clr-gray-65: hsl(0 0% 65%);
+	--clr-gray-70: hsl(0 0% 70%);
+	--clr-gray-75: hsl(0 0% 75%);
+	--clr-gray-80: hsl(0 0% 80%);
+	--clr-gray-85: hsl(0 0% 85%);
+	--clr-gray-90: hsl(0 0% 90%);
+	--clr-gray-95: hsl(0 0% 95%);
+	--gradient-gray: linear-gradient(
+		135deg,
+		var(--clr-gray-10),
+		var(--clr-gray-40)
+	);
+	--gradient-color: linear-gradient(
+		135deg,
+		var(--clr-primary),
+		var(--clr-secondary)
+	);
 }
 
 /* HOME PAGE STYLES */
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: min(1280px, 100%);
-    margin: 3rem auto;
-    gap: 3rem;
-    flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: min(1280px, 100%);
+	margin: 3rem auto;
+	gap: 3rem;
+	flex: 1;
 }
 
 .hero-image {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100%;
-    z-index: 1;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 100%;
+	z-index: 1;
 }
 
 .text-body p {
-    padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .page-title {
-    font-family: 'Mistral', cursive;
-    font-weight: 200;
-    font-size: clamp(1.75rem, 4vw, 3.5rem);
+	font-family: "Mistral", cursive;
+	font-weight: 200;
+	font-size: clamp(1.75rem, 4vw, 3.5rem);
 }
