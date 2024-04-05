@@ -1,36 +1,36 @@
 nav {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    color: black;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 600;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	color: white;
+	font-size: clamp(1rem, 2vw, 1.5rem);
+	font-weight: 600;
 }
 
 .menu__links {
-    display: flex;
+	display: flex;
 }
 
 .menu__icon {
-    display: none;
+	display: none;
 }
 
 @media screen and (width < 640px) {
-    nav {
-        color: white;
-    }
+	nav {
+		color: white;
+	}
 
-    .menu__links {
-        display: none;
-    }
+	.menu__links {
+		display: none;
+	}
 
-    .menu__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: black;
-        /* filter: drop-shadow(0px 0px 3px white); */
-    }
+	.menu__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		color: black;
+		/* filter: drop-shadow(0px 0px 3px white); */
+	}
 }

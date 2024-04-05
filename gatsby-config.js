@@ -11,20 +11,20 @@ module.exports = {
 	},
 	plugins: [
 		{
-			resolve: "gatsby-plugin-react-svg",
-			options: {
-				rule: {
-					include: /assets/, // See below to configure properly
-				},
-			},
-		},
-		{
 			resolve: "gatsby-source-strapi",
 			options: {
 				apiURL: process.env.STRAPI_API_URL,
 				accessToken: process.env.STRAPI_TOKEN,
 				collectionTypes: ["article"],
 				singleTypes: ["header", "footer", "homepage", "aboutpage"],
+			},
+		},
+		{
+			resolve: "gatsby-plugin-react-svg",
+			options: {
+				rule: {
+					include: /assets/, // See below to configure properly
+				},
 			},
 		},
 		// 'gatsby-plugin-google-gtag',

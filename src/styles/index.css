@@ -60,10 +60,9 @@ ul {
 
 .text-body {
 	line-height: 1.65;
-	max-width: 65ch;
+	max-width: min(95vw, 65ch);
 	margin: auto;
 	font-size: clamp(1rem, 1.5vw, 1.5rem);
-	padding-inline: 0.5 rem;
 }
 
 a {

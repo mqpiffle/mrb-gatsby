@@ -1,62 +1,65 @@
 .card {
-    display: flex;
-    width: min(100%, 95vw);
-    margin-inline: auto;
-    border-radius: 0.25rem;
-    overflow: hidden;
-    box-shadow: 1px 1px 9px black;
-    transition: box-shadow 220ms ease-in-out;
+	display: flex;
+	width: min(100%, 92vw);
+	margin-inline: auto;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	box-shadow: 1px 1px 9px black;
+	transition: box-shadow 220ms ease-in-out;
 }
 
 .card:hover,
 .card:focus {
-    box-shadow: 3px 3px 18px 3px black;
+	box-shadow: 3px 3px 18px 3px black;
 }
 
 .card-image {
-    max-width: 400px;
-    flex-shrink: 0;
-    aspect-ratio: 4 / 3;
+	max-width: 400px;
+	flex-shrink: 0;
+	/* aspect-ratio: 4 / 3; */
+	background-color: var(--clr-gray-10);
 }
 
 .card-context {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: white;
-    background-image: var(--gradient-gray);
-    gap: 0.75rem;
+	/* min-width: 70%; */
+	padding: 1rem 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	background-image: var(--gradient-gray);
+	gap: 0.75rem;
+	/* flex-shrink: 0; */
 }
 
 .card-context-heading {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .card-context__title {
-    font-size: clamp(1.25rem, 2vw, 1.625rem);
+	font-size: clamp(1.25rem, 2vw, 1.625rem);
 }
 .card-context__date {
-    margin: 0;
+	margin: 0;
 }
 
 .card-context__body {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.7;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+	font-size: clamp(1rem, 2vw, 1.25rem);
+	line-height: 1.65;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 @media screen and (width < 640px) {
-    .card {
-        flex-direction: column;
-    }
+	.card {
+		flex-direction: column;
+	}
 
-    .card-image {
-        max-width: 640px;
-        flex-shrink: 0;
-        aspect-ratio: 4 / 3;
-    }
+	.card-image {
+		max-width: 640px;
+		/* flex-shrink: 0; */
+		/* aspect-ratio: 4 / 3; */
+	}
 }
