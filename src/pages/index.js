@@ -1,53 +1,55 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import * as React from "react"
+import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Layout from '../components/shared/Layout'
-import Seo from '../components/shared/Seo'
+import Layout from "../components/shared/Layout"
+import Seo from "../components/shared/Seo"
+import MediaLinkContainer from "../components/media-links/MediaLinkContainer"
 
-import '../styles/index.css'
+import "../styles/index.css"
 
 const IndexPage = ({ data }) => {
-    return (
-        <Layout pageTitle={'Many Rivers Band Official Website | Home'}>
-            <GatsbyImage
-                className='hero-image'
-                image={getImage(data.strapiHomepage.heroImage.localFile)}
-                alt='Many Rivers Band logo'
-            />
-            <div
-                className='text-body'
-                dangerouslySetInnerHTML={{
-                    __html: data.strapiHomepage.text.data.childMarkdownRemark
-                        .html,
-                }}
-            />
-        </Layout>
-    )
+	return (
+		<Layout pageTitle={"Many Rivers Band Official Website | Home"}>
+			<GatsbyImage
+				className='hero-image'
+				image={getImage(data.strapiHomepage.heroImage.localFile)}
+				alt='Many Rivers Band logo'
+			/>
+			<div
+				className='text-body'
+				dangerouslySetInnerHTML={{
+					__html: data.strapiHomepage.text.data.childMarkdownRemark
+						.html,
+				}}
+			/>
+			<MediaLinkContainer />
+		</Layout>
+	)
 }
 
 export default IndexPage
 
-export const Head = () => <Seo title={'Home'} />
+export const Head = () => <Seo title={"Home"} />
 
 export const PageQuery = graphql`
-    query {
-        strapiHomepage {
-            title
-            heroImage {
-                localFile {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
-                }
-            }
-            text {
-                data {
-                    childMarkdownRemark {
-                        html
-                    }
-                }
-            }
-        }
-    }
+	query {
+		strapiHomepage {
+			title
+			heroImage {
+				localFile {
+					childImageSharp {
+						gatsbyImageData
+					}
+				}
+			}
+			text {
+				data {
+					childMarkdownRemark {
+						html
+					}
+				}
+			}
+		}
+	}
 `
