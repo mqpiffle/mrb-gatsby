@@ -75,6 +75,8 @@ a {
 :root {
 	--clr-primary: hsl(19 52% 56%);
 	--clr-cta: hsl(337 78% 33%);
+	--clr-primary-alt: hsl(102 38% 41%);
+	--clr-cta-alt: hsl(264 43% 32%);
 	--clr-gray-05: hsl(0 0% 5%);
 	--clr-gray-10: hsl(0 0% 10%);
 	--clr-gray-15: hsl(0 0% 15%);
@@ -102,7 +104,13 @@ a {
 	--gradient-color: linear-gradient(
 		135deg,
 		var(--clr-primary),
-		var(--clr-secondary)
+		var(--clr-cta)
+	);
+	--gradient-color-alt: linear-gradient(
+		135deg,
+		var(--clr-cta-alt),
+		var(--clr-primary-alt),
+		var(--clr-cta-alt)
 	);
 }
 

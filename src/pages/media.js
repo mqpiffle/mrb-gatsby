@@ -1,12 +1,13 @@
 import * as React from 'react'
 
+import Images from '../components/media/Images'
 import Layout from '../components/shared/Layout'
 import Seo from '../components/shared/Seo'
 
 const MediaPage = props => {
     return (
         <Layout>
-            <p>This is our media page.</p>
+            <Images />
         </Layout>
     )
 }

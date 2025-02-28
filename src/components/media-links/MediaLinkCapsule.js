@@ -22,7 +22,7 @@ const MediaLinkCapsule = ({ icon, displayName, linkTo }) => {
 	return (
 		<div className='link-capsule'>
 			<Icon
-				path={mdiStar || icon}
+				path={mdiApple}
 				title='iTunes'
 				size={1}
 				color='var(--clr-gray-80)'

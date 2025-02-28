@@ -5,8 +5,13 @@ section {
 	align-items: center;
 	justify-content: space-evenly;
 	padding: 1rem;
-	background-color: var(--clr-cta);
+	background: linear-gradient(
+		135deg,
+		var(--clr-cta-alt),
+		var(--clr-primary-alt),
+		var(--clr-cta-alt));
 	color: white;
+	font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .link-capsule {
@@ -15,9 +20,9 @@ section {
 	align-items: center;
 	gap: 0.5rem;
 	background-color: var(--clr-gray-10);
-	padding: 0.25rem 1rem;
+	padding: 0.5rem 1rem;
 	border-radius: 0.25rem;
-	transition: all 110ms ease-in-out;
+	transition: all 80ms ease-in-out;
 
 	a {
 		color: white;

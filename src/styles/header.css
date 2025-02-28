@@ -1,4 +1,10 @@
 header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header-main {
 	max-width: 100%;
 	display: flex;
 	align-items: center;
@@ -7,9 +13,7 @@ header {
 	background-color: black;
 	/* background-image: url('../images/mrb_bg.png'); */
 	background-position: center;
-	position: sticky;
-	top: 0;
-	z-index: 100;
+	
 }
 
 .temp {

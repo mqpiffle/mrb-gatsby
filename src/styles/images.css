@@ -1,0 +1,19 @@
+.images-title {
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 1rem;
+    background: var(--gradient-color);
+    color: white;
+    font-size: clamp(1.25rem, 1.5vw, 2rem);
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(275px, 100%), 1fr));
+    gap: 1rem;
+    margin: 1rem;
+    align-items: center;
+}   
