@@ -10,7 +10,6 @@ const MediaLinkContainer = () => {
 		query {
 			strapiHomepage {
 				audioLink {
-					icon
 					displayName
 					linkTo
 				}
@@ -20,21 +19,9 @@ const MediaLinkContainer = () => {
 
 	const mediaLinks = data.strapiHomepage.audioLink.map((link) => (
 		<MediaLinkCapsule
-			icon={link.icon}
 			displayName={link.displayName}
 			linkTo={link.linkTo}
 		/>
-		// <div className='link-capsule'>
-		// 	<Icon
-		// 		path={mdiApple}
-		// 		title='iTunes'
-		// 		size={1}
-		// 		color='var(--clr-gray-80)'
-		// 	/>
-		// 	<a href={link.linkTo} target='_blank' rel='noreferrer'>
-		// 		{link.displayName}
-		// 	</a>
-		// </div>
 	))
 
 	return (
